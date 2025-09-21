@@ -1,1 +1,173 @@
+<!doctype html>
 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mahadev Kondiba Bhande — Portfolio</title>
+  <meta name="description" content="Portfolio of Mahadev Kondiba Bhande — First-year Physics student, coder, and problem solver." />
+  <style>
+    /* Simple, modern responsive portfolio (single-file) */
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#7dd3fc;
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071025);color:#e6eef6}
+    a{color:var(--accent);text-decoration:none}.container{max-width:var(--maxw);margin:36px auto;padding:28px}
+.grid{display:grid;gap:22px}
+header{display:flex;gap:20px;align-items:center}
+
+.avatar{
+  flex:0 0 120px;height:120px;border-radius:18px;background:linear-gradient(135deg,#0b1220,#07213a);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:38px;color:var(--accent);box-shadow:0 6px 18px rgba(2,6,23,0.6)
+}
+
+.hero{display:flex;flex-direction:column}
+.name{font-size:22px;font-weight:800;margin:0}
+.role{margin:6px 0;color:var(--muted);font-weight:600}
+.bio{margin-top:12px;color:#cdd9e6;line-height:1.5}
+
+.top-actions{margin-top:14px;display:flex;gap:10px}
+.btn{background:var(--accent);color:#062233;padding:10px 14px;border-radius:10px;font-weight:700;border:none;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid rgba(125,211,252,0.14);color:var(--accent)}
+
+main{display:grid;grid-template-columns:1fr 340px;gap:26px;margin-top:22px}
+
+/* Left column */
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+h2{margin:0 0 12px 0;font-size:16px}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skill{background:var(--glass);padding:8px 10px;border-radius:8px;color:var(--muted);font-weight:600}
+
+.projects{display:grid;gap:12px}
+.project{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02)}
+.project h3{margin:0 0 6px 0;font-size:14px}
+.project p{margin:0;color:var(--muted);font-size:13px}
+.meta{margin-top:10px;color:var(--muted);font-size:13px}
+
+/* Right column */
+aside .list{display:flex;flex-direction:column;gap:10px}
+.info-row{display:flex;justify-content:space-between;gap:12px}
+.label{color:var(--muted);font-weight:700}
+.value{font-weight:700}
+
+footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
+
+/* Responsive */
+@media (max-width:880px){
+  main{grid-template-columns:1fr}
+  .avatar{flex:0 0 96px;height:96px;font-size:30px}
+}
+
+/* Tiny utility */
+.tag{display:inline-block;padding:6px 8px;border-radius:8px;background:rgba(125,211,252,0.06);color:var(--accent);font-weight:700;font-size:12px}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="grid">
+      <div style="display:flex;gap:18px;align-items:center">
+        <div class="avatar">MK</div>
+        <div class="hero">
+          <h1 class="name">Mahadev Kondiba Bhande</h1>
+          <div class="role">First-year Physics student • Budding Web Developer • Problem Solver</div>
+          <p class="bio">I build small, useful web projects and explore computational physics problems. I enjoy clean code, step-by-step debugging, and turning ideas into working prototypes. Seeking internships or project collaborations in web development and scientific computing.</p>
+          <div class="top-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="mailto:mahadev@example.com">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </header><main>
+  <section>
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript (basic)</span>
+        <span class="skill">Python</span>
+        <span class="skill">Data Analysis</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Problem Solving</span>
+      </div>
+    </div>
+
+    <div id="projects" class="card" style="margin-top:16px">
+      <h2>Selected Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>1) Personal Portfolio Website</h3>
+          <p>A responsive single-file HTML/CSS portfolio (this page). Focus: clean layout, accessibility, and easy customization.</p>
+          <div class="meta">Tech: HTML • CSS • Responsive design</div>
+        </article>
+
+        <article class="project">
+          <h3>2) Physics Simulation: Projectile Motion (Python)</h3>
+          <p>A simple Python simulation that plots projectile trajectories and compares analytical vs numerical results.</p>
+          <div class="meta">Tech: Python • Matplotlib • Numerical methods</div>
+        </article>
+
+        <article class="project">
+          <h3>3) To-Do Web App (Vanilla JS)</h3>
+          <p>Small task manager that stores items in localStorage. Helps practice DOM manipulation and state persistence.</p>
+          <div class="meta">Tech: HTML • CSS • JavaScript</div>
+        </article>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h2>Experience & Achievements</h2>
+      <ul style="margin:0;padding-left:18px;color:var(--muted)">
+        <li>Member — College Coding Club (2025)</li>
+        <li>Completed online course: Introduction to Python (self-study)</li>
+        <li>Participated in inter-college hackathon (team project)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h2>Education</h2>
+      <div style="color:var(--muted)">First-year B.Sc. in Physics — Your College Name</div>
+      <div style="margin-top:8px;color:var(--muted)">Relevant coursework: Mechanics, Calculus, Intro to Programming</div>
+    </div>
+  </section>
+
+  <aside>
+    <div class="card">
+      <h2>Contact</h2>
+      <div class="list">
+        <div class="info-row"><span class="label">Email</span><span class="value">mahadev@example.com</span></div>
+        <div class="info-row"><span class="label">Phone</span><span class="value">+91 9XXXXXXXXX</span></div>
+        <div class="info-row"><span class="label">Location</span><span class="value">India</span></div>
+        <div class="info-row"><span class="label">GitHub</span><span class="value"><a href="#">github.com/username</a></span></div>
+        <div class="info-row"><span class="label">LinkedIn</span><span class="value"><a href="#">linkedin.com/in/username</a></span></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h2>Quick Bio</h2>
+      <p style="margin:0;color:var(--muted)">Curious physics student who writes clean HTML/CSS and explores small Python simulations. Loves collaborating and learning on the go.</p>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h2>Availability</h2>
+      <div style="color:var(--muted);font-weight:700">Open for internships & project collaborations</div>
+      <div style="margin-top:10px"><span class="tag">Remote-friendly</span></div>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  Designed & built by Mahadev Kondiba Bhande — Customize this template and replace placeholder text with your own.
+</footer>
+
+  </div>
+</body>
+</html>
